@@ -1,3 +1,5 @@
+'''Завдання 2. Рекурсія. Створення фрактала “дерево Піфагора” за допомогою рекурсії'''
+
 import matplotlib.pyplot as plt
 import numpy as np
 

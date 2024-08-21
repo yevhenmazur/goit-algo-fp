@@ -1,3 +1,13 @@
+'''
+Завдання 5. Візуалізація обходу бінарного дерева
+
+створити програму, яка візуалізує обходи дерева: у глибину та в ширину.
+Вона повинна відображати кожен крок у вузлах з різними кольорами.
+Кольори вузлів мають змінюватися, залежно від послідовності обходу.
+Кожен вузол при його відвідуванні має отримувати унікальний колір,
+який візуально відображає порядок обходу.
+'''
+
 import uuid
 import heapq
 from collections import deque
@@ -42,7 +52,6 @@ def draw_tree(tree_root, window_title="Graph Visualization"):
     labels = {node[0]: node[1]['label'] for node in tree.nodes(data=True)}
 
     fig = plt.figure(figsize=(8, 5))
-    # fig.canvas.set_window_title(window_title)
     fig.canvas.manager.set_window_title(window_title)
     nx.draw(tree, pos=pos, labels=labels, arrows=False,
             node_size=2500, node_color=colors)

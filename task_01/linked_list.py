@@ -61,6 +61,7 @@ class LinkedList:
             curr = curr.next
 
     def reverse_list(self):
+        '''Виконує реверсування однозв'язного списку'''
         prev, curr = None, self.head
         while curr:
             next_node = curr.next
@@ -72,6 +73,7 @@ class LinkedList:
         return self.head
 
     def sort_list(self):
+        '''Сортує однозв'язний список вставками'''
         if not self.head or not self.head.next:
             return
 

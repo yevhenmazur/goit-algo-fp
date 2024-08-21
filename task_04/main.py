@@ -1,3 +1,5 @@
+'''Завдання 4. Візуалізація піраміди'''
+
 import uuid
 import heapq
 import networkx as nx
@@ -38,8 +40,7 @@ def draw_tree(tree_root):
     tree = add_edges(tree, tree_root, pos)
 
     colors = [node[1]['color'] for node in tree.nodes(data=True)]
-    labels = {node[0]: node[1]['label'] for node in tree.nodes(
-        data=True)}  # Використовуйте значення вузла для міток
+    labels = {node[0]: node[1]['label'] for node in tree.nodes(data=True)}
 
     plt.figure(figsize=(8, 5))
     nx.draw(tree, pos=pos, labels=labels, arrows=False,

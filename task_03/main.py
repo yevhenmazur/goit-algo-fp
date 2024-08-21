@@ -1,3 +1,5 @@
+'''Завдання 3. Дерева, алгоритм Дейкстри'''
+
 import heapq
 import networkx as nx
 import matplotlib.pyplot as plt
